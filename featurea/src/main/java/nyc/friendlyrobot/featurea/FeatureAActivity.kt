@@ -2,16 +2,13 @@ package nyc.friendlyrobot.featurea
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import nyc.friendlyrobot.base.Sheath
+import javax.inject.Inject
 
 class FeatureAActivity : AppCompatActivity() {
-
+    @Inject lateinit var flavor: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        DaggerActivityComponent
-                .builder()
-                .activity(this)
-                .appComponent(Sheath.create(application))
+        (application.getSystemService(featureA) as FeatureAComponent).plusActivityComponent().inject(this)
     }
 }
