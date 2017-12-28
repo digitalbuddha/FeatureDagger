@@ -8,8 +8,10 @@ import nyc.friendlyrobot.featurea.FeatureAComponent
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = arrayOf(BaseModule::class))
+@Component(modules = arrayOf(BaseModule::class, FlavorModule::class, TypeModule::class))
 interface AppComponent : FeatureAComponent {
+    fun plusActivityComponent(): ActivityComponent
+
     @Component.Builder
     interface Builder {
 

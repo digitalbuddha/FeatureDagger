@@ -4,7 +4,6 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
-
 @Module
 class BaseModule {
 
@@ -15,6 +14,4 @@ class BaseModule {
         @JvmStatic
         fun provideBuildType(): String = BuildConfig.BUILD_TYPE
     }
-
-
 }

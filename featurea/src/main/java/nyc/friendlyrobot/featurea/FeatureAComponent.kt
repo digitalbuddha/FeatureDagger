@@ -7,17 +7,15 @@ import nyc.friendlyrobot.base.ActivityScoped
 val featureA="FeatureA"
 
 interface FeatureAComponent {
-    fun plusActivityComponent(): ActivityComponent
+    fun plusFeatureAActivityComponent(): FeatureAActivityComponent
 
 }
 
 @Module
-class ActivityModule {
+class FeatureAActivityModule
 
-}
-
-@Subcomponent(modules = arrayOf(ActivityModule::class))
+@Subcomponent(modules = arrayOf(FeatureAActivityModule::class))
 @ActivityScoped
-interface ActivityComponent {
+interface FeatureAActivityComponent {
     fun inject(featureAActivity: FeatureAActivity)
 }
