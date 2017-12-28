@@ -17,5 +17,5 @@ class FeatureAActivityModule
 @Subcomponent(modules = arrayOf(FeatureAActivityModule::class))
 @ActivityScoped
 interface FeatureAActivityComponent {
-    fun inject(featureAActivity: FeatureAActivity)
+    fun inject(featureAActivity: FeatureAFeatureAActivity)
 }

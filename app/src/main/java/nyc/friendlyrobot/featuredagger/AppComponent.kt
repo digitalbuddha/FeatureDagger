@@ -9,7 +9,7 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = arrayOf(BaseModule::class, FlavorModule::class, TypeModule::class))
-interface AppComponent : FeatureAComponent {
+interface AppComponent : FeatureAComponent, nyc.friendlyrobot.featurea.FeatureBComponent {
     fun plusActivityComponent(): ActivityComponent
 
     @Component.Builder

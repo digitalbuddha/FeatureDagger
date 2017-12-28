@@ -2,10 +2,9 @@ package nyc.friendlyrobot.featurea
 
 import android.annotation.SuppressLint
 import android.app.Activity
-import android.app.Application
 import android.content.Context
 
-object FeatureInjector {
+object FeatureAInjector {
 
     private val ACTIVIVTY_COMPONENT = "FeatureAActivityComponent"
     private val APP_COMPONENT = "FeatureAComponent"
@@ -28,7 +27,7 @@ object FeatureInjector {
     }
 
     fun create(activity: Activity): FeatureAActivityComponent {
-        return FeatureInjector.obtainFeatureComponent(activity)
+        return FeatureAInjector.obtainFeatureComponent(activity)
                 .plusFeatureAActivityComponent()
     }
 }

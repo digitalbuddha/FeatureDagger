@@ -3,7 +3,7 @@ package nyc.friendlyrobot.featurea
 import android.os.Bundle
 import javax.inject.Inject
 
-class FeatureAActivity : BaseActivity() {
+class FeatureAFeatureAActivity : BaseFeatureAActivity() {
 
     @Inject lateinit var flavor: String
     override fun onCreate(savedInstanceState: Bundle?) {

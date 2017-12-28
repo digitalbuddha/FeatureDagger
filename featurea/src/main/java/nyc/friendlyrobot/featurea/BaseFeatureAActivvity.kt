@@ -2,13 +2,13 @@ package nyc.friendlyrobot.featurea
 
 import android.support.v7.app.AppCompatActivity
 
-abstract class BaseActivity : AppCompatActivity() {
+abstract class BaseFeatureAActivity : AppCompatActivity() {
     val activityComponent: FeatureAActivityComponent  by lazy {
-        FeatureInjector.create(this)
+        FeatureAInjector.create(this)
     }
 
     override fun getSystemService(name: String): Any? {
-        return if (FeatureInjector.matchesService(name)) {
+        return if (FeatureAInjector.matchesService(name)) {
             activityComponent
         } else super.getSystemService(name)
     }
