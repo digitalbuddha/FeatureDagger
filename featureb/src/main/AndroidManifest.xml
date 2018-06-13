@@ -1,2 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nyc.friendlyrobot.featureb" />
+    package="nyc.friendlyrobot.featureb" >
+
+    <application>
+        <activity android:name=".FeatureBFeatureBActivity"/>
+    </application>
+</manifest>

@@ -5,11 +5,12 @@ import dagger.BindsInstance
 import dagger.Component
 import nyc.friendlyrobot.base.BaseModule
 import nyc.friendlyrobot.featurea.FeatureAComponent
+import nyc.friendlyrobot.featureb.FeatureBComponent
 import javax.inject.Singleton
 
 @Singleton
 @Component(modules = arrayOf(BaseModule::class, FlavorModule::class, TypeModule::class))
-interface AppComponent : FeatureAComponent, nyc.friendlyrobot.featurea.FeatureBComponent {
+interface AppComponent : FeatureAComponent, FeatureBComponent {
     fun plusActivityComponent(): ActivityComponent
 
     @Component.Builder

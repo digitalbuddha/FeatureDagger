@@ -3,7 +3,7 @@
     package="nyc.friendlyrobot.featurea">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".FeatureAFeatureAActivity"></activity>
     </application>
 
 </manifest>
