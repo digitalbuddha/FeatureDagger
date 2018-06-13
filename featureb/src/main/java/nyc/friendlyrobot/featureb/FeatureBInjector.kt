@@ -1,4 +1,4 @@
-package nyc.friendlyrobot.featurea
+package nyc.friendlyrobot.featureb
 
 import android.annotation.SuppressLint
 import android.app.Activity

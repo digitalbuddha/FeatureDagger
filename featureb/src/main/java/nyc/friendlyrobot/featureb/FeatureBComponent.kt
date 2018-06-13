@@ -1,4 +1,4 @@
-package nyc.friendlyrobot.featurea
+package nyc.friendlyrobot.featureb
 
 import dagger.Module
 import dagger.Subcomponent
